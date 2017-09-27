@@ -10,6 +10,7 @@ def get_config():
 
 
 def to_morse(text):
+	text = text.lower()
 	ret = ""
 	config = get_config()
 	for ch in text:
